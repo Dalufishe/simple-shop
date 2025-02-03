@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車範例網站 - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>購物車範例網站 - Admin</h1>
+        <div id="login-section">
+            <h2>登入</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">登入</button>
+        </div>
+
+        <div id="admin-section" style="display: none;">
+            <h2>商品管理</h2>
+            <div>
+                <input type="text" id="new-product-name" placeholder="Product Name">
+                <input type="number" id="new-product-price" placeholder="Product Price">
+                <button onclick="addProduct()">添加商品</button>
+            </div>
+            <div id="product-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
